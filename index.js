@@ -1,3 +1,4 @@
+const express = require("express");
 const { app, bot, PORT, AUTHORIZED_USER_ID, waitingState } = require("./bot_setup.js");
 const { connectDB, getDB } = require("./database.js");
 const { 
@@ -20,7 +21,7 @@ const {
 const { sendDebugMessage } = require("./utils.js");
 
 // Main bot logic and command handlers would go here
-// ... (This part would contain the original bot's command handling, message processing, etc.)
+// ... (This part would contain the original bot\'s command handling, message processing, etc.)
 
 // Example of how to use the imported functions (this would be replaced by actual bot logic)
 bot.command("start", async (ctx) => {
@@ -37,5 +38,3 @@ connectDB().then(() => {
         console.log(`Bot listening on port ${PORT}`);
     });
 });
-
-
